@@ -1,24 +1,19 @@
 import React from 'react';
-import { Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Profil from './App';
-import Mahasiswa from './Mahasiswa';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faUser, faUserGraduate } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { WebView } from 'react-native-webview';
+import Createdata from './Createdata';
+
 
 function HomeScreen() {
-  return (
-    <Profil />
-  );
+  return <Createdata />;
 }
 
 function DataMahasiswaScreen() {
-  return (
-    <Mahasiswa/>
-  );
+  return <Mahasiswa />;
 }
 
 function WebScreen() {
